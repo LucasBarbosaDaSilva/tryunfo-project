@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Form.css';
 
 class Form extends React.Component {
   render() {
@@ -8,9 +9,10 @@ class Form extends React.Component {
       cardTrunfo, hasTrunfo, isSaveButtonDisabled,
       onInputChange, onSaveButtonClick } = this.props;
     return (
-      <section>
-        <form>
-          <label htmlFor="nameText">
+      <section className="section">
+        <form className="form">
+          <h3 className="add-card">Adicione Nova Carta</h3>
+          <label className="label" htmlFor="nameText">
             Name:
             <input
               type="text"
@@ -22,7 +24,7 @@ class Form extends React.Component {
             />
           </label>
           <div>
-            <label htmlFor="description">
+            <label className="label" htmlFor="description">
               Descrição:
               <textarea
                 data-testid="description-input"
@@ -34,7 +36,7 @@ class Form extends React.Component {
             </label>
           </div>
           <div>
-            <label htmlFor="number1">
+            <label className="label" htmlFor="number1">
               Attr01
               <input
                 type="number"
@@ -45,7 +47,7 @@ class Form extends React.Component {
                 onChange={ onInputChange }
               />
             </label>
-            <label htmlFor="number2">
+            <label className="label" htmlFor="number2">
               Attr02
               <input
                 type="number"
@@ -56,7 +58,7 @@ class Form extends React.Component {
                 onChange={ onInputChange }
               />
             </label>
-            <label htmlFor="number3">
+            <label className="label" htmlFor="number3">
               Attr03
               <input
                 type="number"
@@ -69,7 +71,7 @@ class Form extends React.Component {
             </label>
           </div>
           <div>
-            <label htmlFor="image">
+            <label className="label" htmlFor="image">
               Imagem
               <input
                 type="text"
@@ -81,7 +83,7 @@ class Form extends React.Component {
               />
             </label>
           </div>
-          <label htmlFor="rare">
+          <label className="label" htmlFor="rare">
             Raridade
             <select
               data-testid="rare-input"
@@ -90,33 +92,37 @@ class Form extends React.Component {
               value={ cardRare }
               onChange={ onInputChange }
             >
-              <option>normal</option>
-              <option>raro</option>
-              <option>muito raro</option>
+              <option>NORMAL</option>
+              <option>RARO</option>
+              <option>MUITO RARO</option>
             </select>
           </label>
-          {!hasTrunfo
-            ? (
-              <label htmlFor="trunfo">
-                <input
-                  type="checkbox"
-                  name="cardTrunfo"
-                  id="trunfo"
-                  data-testid="trunfo-input"
-                  checked={ cardTrunfo }
-                  onChange={ onInputChange }
-                />
-                Super Trybe Trunfo
-              </label>) : 'Você já tem um Super Trunfo em seu baralho'}
-          <button
-            type="button"
-            data-testid="save-button"
-            name="isSaveButtonDisabled"
-            disabled={ isSaveButtonDisabled }
-            onClick={ onSaveButtonClick }
-          >
-            Salvar
-          </button>
+          <div className="save-trunfo">
+
+            {!hasTrunfo
+              ? (
+                <label className="label-trunfo" htmlFor="trunfo">
+                  <h4 id="super-trunfo"> Super Trybe Trunfo </h4>
+                  <input
+                    type="checkbox"
+                    name="cardTrunfo"
+                    id="trunfo"
+                    data-testid="trunfo-input"
+                    checked={ cardTrunfo }
+                    onChange={ onInputChange }
+                  />
+                </label>) : 'Você já tem um Super Trunfo em seu baralho'}
+            <button
+              id="button-save"
+              type="button"
+              data-testid="save-button"
+              name="isSaveButtonDisabled"
+              disabled={ isSaveButtonDisabled }
+              onClick={ onSaveButtonClick }
+            >
+              Salvar
+            </button>
+          </div>
 
         </form>
       </section>

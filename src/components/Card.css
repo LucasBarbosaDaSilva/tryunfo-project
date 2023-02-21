@@ -1,0 +1,128 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 338.7px;
+height: 514.86px;
+margin-top: 10px;
+/* left: 751.73px;
+top: 613.73px; */
+
+background: #036B52;
+border-radius: 9.73277px;
+}
+
+
+.name {
+  display: flex;
+  width: 338.53px;
+height: 38.93px;
+margin-left: 0px;
+top: 632.23px;
+
+background: #023031;
+border-radius: 9.73277px 9.73277px 0px 0px;
+}
+
+#card-name {
+  display: flex;
+  justify-content: center;
+width: 111.3px;
+height: 35.04px;
+margin-left: 160px;
+margin-top: 6.04px;
+
+font-family: 'Bungee Shade', cursive;;
+font-style: normal;
+font-weight: 700;
+font-size: 27.2518px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+#card-image {
+  display: flex;
+  justify-content: center;
+  width: 310.53px;
+height: 210.57px;
+margin-left: 15px;
+margin-top: 12px;
+border-radius: 10px;
+background-color: #FFFFFF;
+
+}
+
+#card-description {
+  display: flex;
+  justify-content: left;
+width: 308.53px;
+height: 143.07px;
+margin-left: 10px;
+margin-top: 14px;
+margin-bottom: 15px;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 13px;
+/* or 130% */
+
+
+color: #FFFFFF;
+}
+
+.card-att {
+  display: flex;
+  justify-content: left;
+  flex-flow: row;
+  width: 266.33px;
+height: 23px;
+margin-top: 15px;
+margin-bottom: 0px;
+transform: translateY(-22px);
+/* left: calc(50% - 206.33px/2 + 256.75px);
+top: calc(50% - 23px/2 - 795.87px); */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 600;
+font-size: 15.5724px;
+line-height: 150%;
+/* or 23px */
+
+
+/* gray 700 */
+background-color: #FFFFFF;
+color: #3D495C;
+}
+
+/* #att-one {
+  width: 46.72px;
+height: 29.92px;
+left: 1013.54px;
+top: 976.77px;
+
+background: #023031;
+border-radius: 0px 9.73277px 9.73277px 0px;
+} */
+
+.rare-trunfo {
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 18px;
+  transform: translateY(-25px);
+  font-family: 'Epilogue';
+font-style: normal;
+font-weight: 600;
+font-size: 15.5724px;
+line-height: 150%;
+width: 95px;
+border-radius: 5px;
+/* or 23px */
+
+
+/* gray 700 */
+background-color: #fff9f9;
+color: #3D495C;
+}

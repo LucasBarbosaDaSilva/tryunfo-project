@@ -1,0 +1,108 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Shade', cursive;
+font-style: italic;
+font-weight: 800;
+font-size: 80px;
+line-height: 29px;
+margin-top: 70px;
+margin-bottom: 100px;
+text-transform: uppercase;
+transform: rotate(-6.92deg);
+color:#FFFFFF;
+}
+
+#form {
+  display: flex;
+ flex-direction: row;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  /* align-content: center; */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-self: center;
+}
+
+#all-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+  
+}
+
+#button-delete {
+  display: flex;
+  background-color:#FFFFFF;
+  border: 1,5px solid black 1.5%;
+  color: black;
+  border-radius: 10px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  align-self: center;
+  justify-content: center;
+ 
+}
+
+#button-delete:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+#section-one {
+  display: flex;
+  height: 721px;
+width: 1124px;
+border-radius: 20px;
+background: #FFFFFF;
+justify-content: left;
+align-self: center;
+border: 1.5px solid black;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 358.17px;
+height: 534.33px;
+/* transform: translateX(-30%); */
+margin-top: 80px;
+margin-left: 120px;
+/* left: 742px;
+top: 604px; */
+
+background: #FFFFFF;
+box-shadow: 0px 3.89311px 18.4923px rgba(0, 0, 0, 0.25);
+border-radius: 9.73277px;
+}
+
+#title-cards {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Shade', cursive;
+font-style: italic;
+font-weight: 800;
+font-size: 35px;
+line-height: 29px;
+text-transform: uppercase;
+
+color:#FFFFFF;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
